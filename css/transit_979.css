@@ -1,0 +1,99 @@
+@media screen and (min-width: 979px){
+    /* GENERAL CSS */
+
+    /* HEADER AND NAVIGATION */
+    #lander section:first-child{
+        background: url(./../assets/banner_desktop.png) no-repeat right;
+    }
+
+    /* TOASTMENU */
+
+    /* BODY ARCHITECTURE */
+    main{
+        max-width: 1000px;
+    }
+
+    #lander{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    #tracker #locations{
+        min-height: 150px;
+    }
+
+    #results_holder{
+        position: relative;
+        width: 100%;
+
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        top:50px;
+    }
+
+    /* ARTICLES AND SUB ELEMENTS */
+    #lander > section{
+        margin-bottom: 25px;
+    }
+
+    #tracker h3{
+        text-align: left;
+        font-size: 1.7em;
+    }
+
+    #tracker h3:first-child{
+        margin-top: 25px;
+    }
+
+    #tracker > section:last-of-type > p{
+        padding: 15px 0;
+    }
+
+    #locations article{
+        position: relative;
+    }
+
+    /* SPECIALS */
+    .desktop, #lander section.no-mobile{
+        display: block;
+    }
+
+    .no-desktop{
+        display: none;
+    }
+
+    #download_apk{
+        display: block;
+    }
+
+    #track_it{
+        display: block;
+    }
+
+    #step_3{
+        display: none;
+    }
+
+    #tracker > section > article:nth-child(2){
+        margin: 15px 0 0 20px;
+    }
+
+    section article:nth-child(2) div.arrow.desktop{
+        display: inline;
+    }
+
+    article:nth-child(2) p{
+        position: relative;
+        top: 0;
+    }
+
+    #target{
+        float: none;
+    }
+
+    button.desktop, .desktop > button{
+        width: 300px;
+    }
+}

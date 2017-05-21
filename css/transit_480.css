@@ -1,0 +1,327 @@
+@media screen and (min-width: 480px) and (orientation: portrait){
+    /* GENERAL CSS */
+    h3{
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    #lander{
+        overflow: auto !important;
+    }
+
+    button, .button, input[type="submit"], input[type="text"]{
+        height: 60px;
+        border-width: 5px;
+        border-radius: 30px;
+        font-size: 1.5em;
+    }
+
+    form .wrapper{
+        border-radius: 26px;
+    }
+
+    /* HEADER AND NAVIGATION */
+    header{
+        height: 75px;
+    }
+
+    header > div{
+        top: 35px;
+        left: 25px;
+    }
+
+    header > p{
+        height: 75px;
+        width: calc(100% - 75px);
+        line-height: 75px;
+        padding: 0 20px;
+
+        font-size: 44px;
+    }
+
+    /* TOASTER MENU */
+    #toastmenu article{
+        font-size: 1.4em;
+        height: 75px;
+        line-height: 75px;
+    }
+
+    /* BODY ARCHITECTURE */
+    #tracker, #map{
+        height: calc(100vh - 100px);
+    }
+
+    #locations{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 6.5em;
+        margin-top: 100px;
+    }
+
+    h1 + p{
+        font-size: 2em;
+    }
+
+    section{
+        min-height: 150px;
+    }
+
+    #results > div > div{
+        margin: 7px 0;
+        height: 30px;
+        width: 100%;
+    }
+
+    #results .progress > div{
+        line-height: 30px;
+    }
+
+    #results > div > div:first-child{
+        height: auto;
+    }
+
+    /* ARTICLES AND SUB ARTICLES */
+    #results > p, body.dark #results > p{
+        font-size: 2em;
+    }
+
+    #results p, body.dark #results p{
+        font-size: 1.7em;
+        line-height: 35px;
+        height: 35px;
+    }
+
+    #results span{
+        font-size: 1.3em;
+    }
+
+    #carousel{
+        height: auto;
+    }
+
+    #transportation .item img{
+        max-height: 200px;
+    }
+
+    /* ARTICLES AND SUB ELEMENTS */
+    #locations > article{
+        max-height: 75px !important;
+    }
+
+    #locations > article  *{
+        font-size: 1.3em;
+    }
+
+    #transprops{
+        font-size: 1.5em;
+        min-height: 200px;
+        align-items: baseline;
+    }
+
+    #transprops > div > *{
+        flex: 3 3 45vw;
+    }
+
+    #transprops > div > div{
+        flex: 8 1 55vw;
+        max-width: none;
+    }
+
+    #results_holder{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        padding: 0 50px;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size: 1.5em;
+        height: 50px;
+    }
+
+    /* SPECIAL */
+    .title{
+        font-size: 1.6em;
+    }
+
+    .progress{
+        height: 30px;
+    }
+
+    .progress > *{
+        line-height: 30px;
+        font-size: 0.8em;
+    }
+
+    #results .progress > *{
+        font-size: 1.1em;
+    }
+
+    h3.margin{
+        font-size: 3.3em;
+        align-self: flex-start;
+        margin: 0 0 25px 0;
+    }
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+    /* GENERAL CSS */
+    #placeholder {
+        overflow: hidden;
+        display: block;
+        height: auto;
+    }
+
+    h1{
+        display: none;
+    }
+
+    h3{
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    #tracker h3{
+        margin: 0;
+    }
+
+    /* HEADER AND NAVIGATION */
+
+    /* TOASTER MENU */
+
+    /* BODY ARCHITECTURE */
+    #locations{
+        max-width: 100%;
+        max-height: 50px;
+    }
+
+    main {
+        position: relative;
+        height: calc(100vh - 50px - 30px);
+        display: block;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #lander {
+        height: calc(100vh - 50px);
+    }
+
+    #lander section{
+        min-height: 0;
+        height: calc(100% - 75px);
+        margin: 0;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: space-between;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #lander section.no-mobile, #lander section .no-mobile{
+        display: none;
+    }
+
+    #lander section+section{
+        padding-bottom: 35px;
+    }
+
+    #lander section > div{
+        margin: auto;
+    }
+
+    /* ARTICLES AND SUB ELEMENTS */
+    #carousel{
+        height: 220px;
+
+    }
+
+    #tracker{
+        position: relative;
+        height: auto;
+    }
+
+    #transprops > div > *{
+        flex: 3 3 50vw;
+    }
+
+    #transprops > div > div{
+        flex: 7 1 50vw;
+        max-width: none;
+    }
+
+    #results_holder{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        position: absolute;
+        top: 150px;
+        left: 0;
+
+        height: calc(100vh - 50px - 30px);
+        width: 100vw;
+        padding: 0;
+    }
+
+    #tracker > section > article{
+        margin: 15px 0 0 0;
+    }
+
+    #locations > article+article{
+        display: none;
+    }
+
+    .owl-controls{
+        display: none !important;
+    }
+
+    #transportation .item img{
+        max-height: 100px;
+    }
+
+    #transprops{
+        display: none;
+    }
+
+    /* FOOTER */
+    footer i{
+        display: none;
+    }
+
+    /* SPECIAL */
+    #tracker h3.margin{
+        font-size: 2.5em;
+        align-self: flex-start;
+        margin: 25px 0 25px 0;
+    }
+
+    #lander > section:first-child{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        height: 75px;
+    }
+
+    h1 + p{
+        font-size: 1.5em;
+    }
+
+    #track_it{
+        height: 30px;
+    }
+}

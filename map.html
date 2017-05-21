@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- General Headers -->
+    <meta charset="UTF-8">
+    <title>Track-It Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFBD15">
+
+    <!-- FRAMEWORKS AND PLUGINS -->
+        <!-- JQUERY PLUGIN -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- OWN FILES -->
+        <!-- CSS links -->
+        <link rel="stylesheet" href="./css/transit.css"/>
+        <link rel="stylesheet" href="./css/transit_dark.css"/>
+        <link rel="stylesheet" href="css/transit_480.css" media="screen"/>
+        <link rel="stylesheet" href="css/transit_767.css" media="screen"/>
+        <link rel="stylesheet" href="css/transit_979.css" media="screen"/>
+        <link rel="stylesheet" href="css/transit_1200.css" media="screen"/>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+        <!-- Javascript links -->
+        <script src="./js/map.js"></script>
+        <script src="./js/transit_shared.js"></script>
+        <script src="./js/transportation_methods.js"></script>
+
+    <!-- FUNCTIONALITY -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRnyhTk1y81e9DZAms_l-_VRVOf24Wpz4&callback=map.initMap"></script>
+
+</head>
+<body class="animo">
+    <div id="toastmenu" class="animo">
+        <header>
+            <p>Menu</p>
+        </header>
+        <section>
+            <article id="href_trackr">To Tracker</article>
+            <article id="themetoggler">Go To Dark Theme</article>
+        </section>
+    </div>
+    <div id="placeholder" class="animo">
+        <header>
+            <div class="animo toaster"><span></span></div>
+            <p onclick="window.location.href='./map.html?easter=egg'">Track-IT</p>
+        </header>
+        <div id="map" class="animo"></div>
+    </div>
+    <script>
+        $(document).on("pagecreate", function(){
+            $.mobile.loading().hide();
+            map.init();
+        });
+    </script>
+</body>
+</html>

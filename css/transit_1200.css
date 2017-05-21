@@ -1,0 +1,32 @@
+@media screen and (min-width: 1200px){
+    /* GENERAL CSS */
+    #lander{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    /* HEADER AND NAVIGATION */
+
+    /* TOASTMENU */
+
+    /* BODY ARCHITECTURE */
+
+    /* ARTICLES AND SUB ELEMENTS */
+
+    /* SPECIALS */
+    .owl-carousel .owl-wrapper-outer{
+        overflow: visible;
+    }
+
+    .no-desktop{
+        display: none !important;
+    }
+
+    #track_it{
+        display: none;
+    }
+
+    #step_3{
+        display: block;
+    }
+}

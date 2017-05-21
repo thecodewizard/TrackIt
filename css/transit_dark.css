@@ -1,0 +1,114 @@
+/* THIS IS THE CSS FILE FOR THE TRANS-IT DARK THEME */
+
+/* GENERAL CSS */
+body.dark{
+    background: #363636;
+}
+
+body.dark button, body.dark .button, body.dark input[type="text"],
+body.dark input[type="submit"]{
+    border: 2px #646464 solid;
+    color: #f1f1f1;
+}
+
+body.dark button, body.dark .button{
+    color: #646464;
+}
+
+body.dark p{
+    color: white;
+}
+
+body.dark .title, body.dark h3, body.dark a, a{
+    color: #ffcd34;
+}
+
+body.dark .result{
+    border-bottom: 2px #ffcd34 solid;
+    background: rgba(255, 205, 52, 0.3);
+}
+
+body.dark em{
+    color: #dcdcdc;
+}
+
+/* HEADER AND NAVIGATION */
+body.dark header{
+    background: #646464;
+}
+
+body.dark section div form p{
+    color: #ffcd34;
+}
+
+body.dark #lander section:first-child p{
+    color: #FFF;
+}
+
+
+/* BODY ARCHITECTURE */
+body.dark #toastmenu{
+    background: #646464;
+}
+
+body.dark .toaster span, body.dark .toaster span:before, body.dark .toaster span:after{
+    background: #ffcd34;
+}
+
+body.dark #toastmenu article, body.dark header p{
+    color: #ffcd34;
+}
+
+body.dark footer{
+    color: #f1f1f1;
+}
+
+/* ARTICLES AND SUBELEMENTS */
+body.dark #results p{
+    color: #ffcd34;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+body.dark #results > p{
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+body.dark #results span{
+    color: #929292;
+    font-weight: normal;
+}
+
+/* SPECIALS */
+body.dark .arrow > div{
+    background: linear-gradient(to top right, transparent 50%, #363636 50%);
+}
+
+body.dark .arrow-left > div{
+    border-color: #29bd29;
+}
+
+body.dark .arrow-right > div{
+    border-color: #d10012;
+}
+
+body.dark .arrow-generic > div{
+    border-color: #ffcd34;
+}
+
+body.dark cite{
+    color: #737373;
+}
+
+body.dark p:hover cite{
+    color: #e3e3e3;
+}
+
+body.dark cite a{
+    opacity: 0.6;
+}
+body.dark p:hover cite a{
+    opacity: 1;
+}
