@@ -1,7 +1,7 @@
 <?php
 
 function get_mysql_connection(){
-    $con = new mysqli('localhost', 'root', 'Ll04021995', 'transit');
+    $con = new mysqli('localhost', 'root', '####', 'transit');
 
     if(!$con) return false;
     if(!empty($con->connect_error)) return false;
